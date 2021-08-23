@@ -1,0 +1,19 @@
+{
+  "name": "wcat",
+  "version": "1.0.0",
+  "description": "wcat module like cat in linux with some more features",
+  "main": "main.js",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {},
+  "bin": {
+    "wcat": "main.wcatjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wcat": "main main.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
