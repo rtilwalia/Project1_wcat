@@ -11,6 +11,7 @@
 
 
 
+const { count } = require("console");
 const fs = require("fs");
 let arguments = process.argv.slice(2); //arguments are fetched
 
@@ -90,6 +91,11 @@ for(let file of filenames){
             let data = removeExtraLine(fileData);
             console.log(data);
         }
+
+        if(flag == "-c"){
+            let data  = countChar(fileData);
+            console.log(data);
+        }
     }
 
     //always print in the last
@@ -148,4 +154,14 @@ function removeExtraLine(content){
     }
 
     return data;
+}
+
+function countChar(content){
+    let contentArr = content.split("\r\n").join("");
+    let count = 0;
+    for(let i = 0; i <contentArr.length; i++){
+        count++;
+    }
+
+    return count;
 }
