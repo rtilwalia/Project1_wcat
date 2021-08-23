@@ -8,3 +8,4 @@ Features that are involved
 4. Displaying the number of line in a file/files.
 5. Displaying the number of line in a file/files except the emptly line.
 6. Removing the extra lines in a file/files.
+7. Counting the number of characters in a file/files.
